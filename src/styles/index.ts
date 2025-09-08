@@ -1,4 +1,4 @@
-export const radius = {
+export const RADIUS = {
   sm: "0.5rem",
   md: "0.75rem",
   base: "1rem",
@@ -6,7 +6,7 @@ export const radius = {
   full: "50%",
 };
 
-export const fontSize = {
+export const FONTSIZE = {
   xs: "0.8rem",
   sm: "0.9rem",
   base: "1rem",
@@ -15,19 +15,19 @@ export const fontSize = {
   xl: "1.75rem",
 };
 
-export const breakpoint = {
+export const BREAKPOINT = {
   mobile: "@media only screen and (max-width: 767px)",
   tablet: "@media only screen and (min-width: 768px) and (max-width: 1279px)",
   desktop: "@media only screen and (min-width: 1280px)",
 };
 
-export const color = {
+export const COLOR = {
   primary: "#1877F2",
   white: "#FFFFFF",
   black: "#000000",
 
   transparent: "rgba(0,0,0,0)",
-  background: "#F1F1F1",
+  background: "#F2F4F7",
 
   grey: "#E0E0E0",
   grey10: "#CCCCCC",
@@ -37,7 +37,7 @@ export const color = {
   link: "#2A9DF4",
 };
 
-export const shadow = {
+export const SHADOW = {
   soft: "0 2px 8px rgba(0, 0, 0, 0.05)",
   thin: "0 2px 4px rgba(0, 0, 0, 0.08)",
   medium: "0 4px 12px rgba(0, 0, 0, 0.12)",
