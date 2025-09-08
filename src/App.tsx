@@ -1,5 +1,7 @@
+import Layout from "./components/common/layout";
+
 function App() {
-  return <h1>Facebook - TypeScript</h1>;
+  return <Layout />;
 }
 
 export default App;
