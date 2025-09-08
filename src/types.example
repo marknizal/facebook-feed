@@ -1,0 +1,9 @@
+type ReactNode =
+  | ReactElement        // e.g., <div>Hello</div>
+  | string              // e.g., "Hello"
+  | number              // e.g., 123
+  | boolean             // true or false (renders nothing)
+  | null                // renders nothing
+  | undefined           // renders nothing
+  | ReactNode[]         // an array of ReactNodes
+  | ReactPortal;        // portals

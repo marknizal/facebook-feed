@@ -1,66 +1,18 @@
 import type { FC } from "react";
+
 import Header from "../header";
 
-import styled from "@emotion/styled";
-import { COLOR, BREAKPOINT } from "../../../styles";
+import * as S from "./styles";
+import * as T from "./types";
 
-const SIDEBAR = "25%";
-const HEADER = "3.5rem";
-const TABLET = "10%";
-
-const Main = styled.main`
-  margin-top: ${HEADER};
-  display: flex;
-  background-color: ${COLOR.background};
-  min-height: calc(100vh - ${HEADER});
-`;
-
-const Aside = styled.aside`
-  position: fixed;
-  display: none;
-  top: ${HEADER};
-  width: ${SIDEBAR};
-  height: calc(100vh - ${HEADER});
-  overflow-y: hidden;
-
-  &:hover {
-    overflow-y: auto;
-  }
-
-  ${BREAKPOINT.desktop} {
-    display: block;
-  }
-`;
-
-const Content = styled.div`
-  width: 100%;
-  padding: 1rem 1.5rem;
-
-  ${BREAKPOINT.tablet} {
-    margin: 0 ${TABLET};
-  }
-
-  ${BREAKPOINT.desktop} {
-    margin: 0 ${SIDEBAR};
-  }
-`;
-
-const Left = styled(Aside)`
-  left: 0;
-`;
-
-const Right = styled(Aside)`
-  right: 0;
-`;
-
-const Layout: FC = () => {
+const Layout: FC<T.LayoutProps> = ({ leftSide, rightSide, children }) => {
   return (
-    <Main>
+    <S.Main>
       <Header />
-      <Left aria-label="Left sidebar"></Left>
-      <Content role="main"></Content>
-      <Right aria-label="Right sidebar"></Right>
-    </Main>
+      <S.Left aria-label="Left sidebar">{leftSide}</S.Left>
+      <S.Content role="main">{children}</S.Content>
+      <S.Right aria-label="Right sidebar">{rightSide}</S.Right>
+    </S.Main>
   );
 };
 
