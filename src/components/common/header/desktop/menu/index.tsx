@@ -1,5 +1,5 @@
 import type { FC } from "react";
-import { MENU_ITEMS } from "./constants";
+import { MENU_ITEMS } from "../../../constants";
 
 import Profile from "../../../../../assets/avatar.jpg";
 import * as S from "./styles";

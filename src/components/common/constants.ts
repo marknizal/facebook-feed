@@ -1,4 +1,12 @@
 import {
+  FaTh,
+  FaFacebookMessenger,
+  FaBell,
+  FaSearch,
+  FaBars,
+} from "react-icons/fa";
+
+import {
   LuHouse,
   LuUsers,
   LuVideo,
@@ -6,6 +14,12 @@ import {
   LuGroup,
   LuMessageCircle,
 } from "react-icons/lu";
+
+export const MENU_ITEMS = [
+  { label: "Menu", icon: FaTh },
+  { label: "Messenger", icon: FaFacebookMessenger },
+  { label: "Notifications", icon: FaBell },
+];
 
 export const NAV_ITEMS = [
   { id: "home", path: "/", label: "Home", Icon: LuHouse },
@@ -24,4 +38,9 @@ export const NAV_ITEMS = [
     Icon: LuStore,
   },
   { id: "groups", path: "/groups", label: "Groups", Icon: LuGroup },
+];
+
+export const ACTIONS = [
+  { id: "search", icon: FaSearch, label: "Search" },
+  { id: "menu", icon: FaBars, label: "Menu" },
 ];

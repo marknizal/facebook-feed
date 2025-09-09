@@ -1,7 +1,7 @@
 import type { FC } from "react";
+import { ACTIONS } from "../../../constants";
 
 import * as S from "./styles";
-import { ACTIONS } from "./constants";
 
 const Topbar: FC = () => {
   return (

@@ -1,5 +1,5 @@
 import { useState, type FC } from "react";
-import { NAV_ITEMS } from "./constants";
+import { NAV_ITEMS } from "../constants";
 
 import * as S from "./styles";
 
