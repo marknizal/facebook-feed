@@ -10,11 +10,12 @@ const Navbar: FC = () => {
     <nav aria-label="Main Navigation">
       <S.NavList>
         {NAV_ITEMS.map(({ id, path, label, Icon }) => (
-          <li key={id}>
+          <li key={id} title={label}>
             <S.Link
               href={path}
               id={id}
               $active={active === id}
+              $isMobile={id === "messenger"}
               onClick={() => setActive(id)}
               aria-label={label}
             >

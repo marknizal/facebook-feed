@@ -1,9 +1,7 @@
-import type { FC } from "react";
-import { LuSearch } from "react-icons/lu";
 import styled from "@emotion/styled";
-import { FONTSIZE, COLOR } from "../../../styles";
+import { FONTSIZE, COLOR, BREAKPOINT } from "../../../styles";
 
-const Wrapper = styled.div`
+export const Wrapper = styled.div`
   display: flex;
   align-items: center;
   padding: 0.5rem 1rem;
@@ -14,9 +12,21 @@ const Wrapper = styled.div`
   svg {
     font-size: ${FONTSIZE.base};
   }
+
+  ${BREAKPOINT.tablet} {
+    width: 2.55rem;
+    aspect-ratio: 1/1;
+    justify-content: center;
+    gap: 0;
+    padding: 0;
+
+    svg {
+      font-size: ${FONTSIZE.md};
+    }
+  }
 `;
 
-const InputContainer = styled.input`
+export const Input = styled.input`
   outline: none;
   border: none;
   background-color: transparent;
@@ -27,15 +37,8 @@ const InputContainer = styled.input`
   &:hover {
     outline: none;
   }
+
+  ${BREAKPOINT.tablet} {
+    display: none;
+  }
 `;
-
-const Input: FC = () => {
-  return (
-    <Wrapper>
-      <LuSearch />
-      <InputContainer placeholder="Search Facebook" name="Search" />
-    </Wrapper>
-  );
-};
-
-export default Input;
