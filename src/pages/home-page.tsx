@@ -1,7 +1,7 @@
 import type { FC } from "react";
 
 import Layout from "../components/common/layout";
-import Socials from "../containers/left-side/socials";
+import Socials from "../containers/socials";
 
 const Homepage: FC = () => {
   return (
