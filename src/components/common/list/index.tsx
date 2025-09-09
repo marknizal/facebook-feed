@@ -10,6 +10,7 @@ const List: FC<T.ListProps> = ({
   avatar = "default",
   ariaLabel = "List",
   border = false,
+  title,
   renderItem,
 }) => {
   const [showAll, setShowAll] = useState(false);
@@ -22,41 +23,45 @@ const List: FC<T.ListProps> = ({
   };
 
   return (
-    <S.Wrapper $border={border} role="list" aria-label={ariaLabel}>
-      {visible.map((item) => {
-        const avatarType = item.avatar || avatar;
+    <>
+      {title && <S.Title>{title}</S.Title>}
 
-        return renderItem ? (
-          <li key={item.id} role="listitem">
-            {renderItem(item)}
+      <S.Wrapper $border={border} role="list" aria-label={ariaLabel}>
+        {visible.map((item) => {
+          const avatarType = item.avatar || avatar;
+
+          return renderItem ? (
+            <li key={item.id} role="listitem">
+              {renderItem(item)}
+            </li>
+          ) : (
+            <S.Item key={item.id} role="listitem">
+              <S.Avatar $type={avatarType}>
+                <img
+                  src={item.src}
+                  alt={`Avatar for ${item.label}`}
+                  loading="lazy"
+                />
+              </S.Avatar>
+              <S.Text>{item.label}</S.Text>
+            </S.Item>
+          );
+        })}
+
+        {maxLength && !showAll && (
+          <li role="listitem">
+            <S.SeeMore
+              onClick={handleSeeMore}
+              aria-expanded={showAll}
+              aria-label="Show more items"
+            >
+              <S.Icon aria-hidden="true" />
+              See more
+            </S.SeeMore>
           </li>
-        ) : (
-          <S.Item key={item.id} role="listitem">
-            <S.Avatar $type={avatarType}>
-              <img
-                src={item.src}
-                alt={`Avatar for ${item.label}`}
-                loading="lazy"
-              />
-            </S.Avatar>
-            <S.Text>{item.label}</S.Text>
-          </S.Item>
-        );
-      })}
-
-      {maxLength && !showAll && (
-        <li role="listitem">
-          <S.SeeMore
-            onClick={handleSeeMore}
-            aria-expanded={showAll}
-            aria-label="Show more items"
-          >
-            <S.Icon aria-hidden="true" />
-            See more
-          </S.SeeMore>
-        </li>
-      )}
-    </S.Wrapper>
+        )}
+      </S.Wrapper>
+    </>
   );
 };
 

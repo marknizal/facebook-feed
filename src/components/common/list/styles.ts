@@ -16,6 +16,12 @@ export const Wrapper = styled.ul<{ $border?: boolean }>`
     `}
 `;
 
+export const Title = styled.p`
+  padding: 0.5rem;
+  color: ${COLOR.grey30};
+  font-weight: 600;
+`;
+
 export const Item = styled.li`
   display: flex;
   align-items: center;

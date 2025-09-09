@@ -14,4 +14,5 @@ export interface ListProps {
   border?: boolean;
   renderItem?: (item: ListItem) => ReactNode;
   ariaLabel?: string;
+  title?: string;
 }
