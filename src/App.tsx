@@ -1,11 +1,7 @@
-import Layout from "./components/common/layout";
+import Homepage from "./pages/home-page";
 
 function App() {
-  return (
-    <Layout leftSide={<></>} rightSide={<></>}>
-      <></>
-    </Layout>
-  );
+  return <Homepage />;
 }
 
 export default App;

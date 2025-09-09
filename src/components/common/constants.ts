@@ -1,3 +1,5 @@
+import * as T from "./types";
+
 import {
   FaTh,
   FaFacebookMessenger,
@@ -15,13 +17,13 @@ import {
   LuMessageCircle,
 } from "react-icons/lu";
 
-export const MENU_ITEMS = [
+export const MENU_ITEMS: T.MenuItem[] = [
   { label: "Menu", icon: FaTh },
   { label: "Messenger", icon: FaFacebookMessenger },
   { label: "Notifications", icon: FaBell },
 ];
 
-export const NAV_ITEMS = [
+export const NAV_ITEMS: T.NavItem[] = [
   { id: "home", path: "/", label: "Home", Icon: LuHouse },
   { id: "friends", path: "/friends", label: "Friends", Icon: LuUsers },
   {
@@ -40,7 +42,7 @@ export const NAV_ITEMS = [
   { id: "groups", path: "/groups", label: "Groups", Icon: LuGroup },
 ];
 
-export const ACTIONS = [
+export const ACTIONS: T.ActionItem[] = [
   { id: "search", icon: FaSearch, label: "Search" },
   { id: "menu", icon: FaBars, label: "Menu" },
 ];

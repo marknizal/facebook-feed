@@ -23,6 +23,7 @@ export const Aside = styled.aside`
   top: ${HEADER};
   width: ${SIDEBAR};
   height: calc(100vh - ${HEADER});
+  padding: 1rem 0.5rem;
   overflow-y: hidden;
 
   &:hover {
