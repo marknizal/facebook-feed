@@ -2,11 +2,19 @@ import type { FC } from "react";
 
 import Layout from "../components/common/layout";
 import Socials from "../containers/socials";
+import UserShortcuts from "../containers/user-shortcuts";
 
 const Homepage: FC = () => {
   return (
-    <Layout leftSide={<Socials />}>
-      <h1>CONTENT</h1>
+    <Layout
+      leftSide={
+        <>
+          <Socials />
+          <UserShortcuts />
+        </>
+      }
+    >
+      <h1></h1>
     </Layout>
   );
 };

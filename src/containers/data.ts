@@ -1,4 +1,5 @@
 import Profile from "../assets/avatar.jpg";
+
 import L1 from "../assets/meta-ai.png";
 import L2 from "../assets/friends.png";
 import L3 from "../assets/groups.png";
@@ -8,6 +9,14 @@ import L6 from "../assets/videos.png";
 import L7 from "../assets/marketplace.png";
 import L8 from "../assets/ads-manager.png";
 import L9 from "../assets/birthday.png";
+
+import S1 from "../assets/S1.webp";
+import S2 from "../assets/S2.webp";
+import S3 from "../assets/S3.webp";
+import S4 from "../assets/S4.webp";
+import S5 from "../assets/S5.webp";
+import S6 from "../assets/S6.webp";
+import S7 from "../assets/S7.webp";
 
 export const SOCIALS = [
   { id: 1, src: L1, label: "Meta AI" },
@@ -29,4 +38,42 @@ export const SOCIAL_ITEMS = [
     avatar: "circle" as const,
   },
   ...SOCIALS,
+];
+
+export const SHORTCUTS = [
+  {
+    id: 1,
+    src: S1,
+    label: "React.js Developers",
+  },
+  {
+    id: 2,
+    src: S2,
+    label: "ReactJS Philippines",
+  },
+  {
+    id: 3,
+    src: S3,
+    label: "Software Developer (Philippines)",
+  },
+  {
+    id: 4,
+    src: S4,
+    label: "Programming Philippines",
+  },
+  {
+    id: 5,
+    src: S5,
+    label: "FRONT-END DEVELOPMENT",
+  },
+  {
+    id: 6,
+    src: S6,
+    label: "IT Fresh Graduate Job Search (PHILIPPINES)",
+  },
+  {
+    id: 7,
+    src: S7,
+    label: "IT Job Search Philippines",
+  },
 ];
