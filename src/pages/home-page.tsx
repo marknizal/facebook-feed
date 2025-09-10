@@ -8,6 +8,7 @@ import Contacts from "../containers/contacts";
 import Birthdays from "../containers/birthdays";
 import Upload from "../containers/news-feed/upload";
 import Stories from "../containers/news-feed/stories";
+import Post from "../containers/news-feed/post";
 
 const Homepage: FC = () => {
   return (
@@ -28,6 +29,7 @@ const Homepage: FC = () => {
     >
       <Upload />
       <Stories />
+      <Post />
     </Layout>
   );
 };
