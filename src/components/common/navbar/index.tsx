@@ -13,7 +13,6 @@ const Navbar: FC = () => {
           <li key={id} title={label}>
             <S.Link
               href={path}
-              id={id}
               $active={active === id}
               $isMobile={id === "messenger"}
               onClick={() => setActive(id)}
