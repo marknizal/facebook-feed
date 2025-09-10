@@ -13,7 +13,7 @@ const Menu: FC = () => {
         </S.Item>
       ))}
 
-      <S.Avatar src={Profile} alt="avatar" title="Account" />
+      <S.Avatar src={Profile} alt="avatar" title="Account" loading="lazy" />
     </S.Wrapper>
   );
 };

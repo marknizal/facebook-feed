@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 import { COLOR, BREAKPOINT } from "../../../styles";
 
-const SIDEBAR = "25%";
+const SIDEBAR = "24%";
 const HEADER = "3.5rem";
 const MOBILE = "5.75rem";
 
@@ -37,7 +37,10 @@ export const Aside = styled.aside`
 
 export const Content = styled.div`
   width: 100%;
-  padding: 1rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 2rem;
 
   ${BREAKPOINT.desktop} {
     margin: 0 ${SIDEBAR};
@@ -49,6 +52,7 @@ export const Content = styled.div`
 
   ${BREAKPOINT.mobile} {
     padding: 0;
+    gap: 0.5rem;
   }
 `;
 

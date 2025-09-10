@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 import { COLOR, FONTSIZE, RADIUS, BREAKPOINT } from "../../../../../styles";
+import { Avatar as A } from "../../../../shared";
 
 export const Wrapper = styled.div`
   width: 100%;
@@ -33,9 +34,7 @@ export const Item = styled.button`
   }
 `;
 
-export const Avatar = styled.img`
+export const Avatar = styled(A)`
   width: 2.55rem;
-  border-radius: ${RADIUS.full};
-  aspect-ratio: 1/1;
   cursor: pointer;
 `;

@@ -6,6 +6,7 @@ import UserShortcuts from "../containers/user-shortcuts";
 import Footer from "../components/common/footer";
 import Contacts from "../containers/contacts";
 import Birthdays from "../containers/birthdays";
+import Upload from "../containers/news-feed/upload";
 
 const Homepage: FC = () => {
   return (
@@ -24,7 +25,7 @@ const Homepage: FC = () => {
         </>
       }
     >
-      <h1></h1>
+      <Upload />
     </Layout>
   );
 };
