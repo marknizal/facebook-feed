@@ -13,6 +13,7 @@ export const Wrapper = styled.header`
   padding: 0 1rem;
   background-color: ${COLOR.white};
   box-shadow: ${SHADOW.thin};
+  z-index: 9999;
 
   ${BREAKPOINT.mobile} {
     display: none;

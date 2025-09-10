@@ -7,6 +7,7 @@ import Footer from "../components/common/footer";
 import Contacts from "../containers/contacts";
 import Birthdays from "../containers/birthdays";
 import Upload from "../containers/news-feed/upload";
+import Stories from "../containers/news-feed/stories";
 
 const Homepage: FC = () => {
   return (
@@ -26,6 +27,7 @@ const Homepage: FC = () => {
       }
     >
       <Upload />
+      <Stories />
     </Layout>
   );
 };

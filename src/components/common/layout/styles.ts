@@ -41,6 +41,7 @@ export const Content = styled.div`
   flex-direction: column;
   gap: 1rem;
   padding: 1rem 2rem;
+  overflow: hidden;
 
   ${BREAKPOINT.desktop} {
     margin: 0 ${SIDEBAR};
