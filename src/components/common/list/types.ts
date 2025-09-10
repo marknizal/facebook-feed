@@ -2,7 +2,7 @@ import type { ReactNode } from "react";
 
 export interface ListItem {
   id: number | string;
-  label: string;
+  name: string;
   src: string;
   avatar?: "default" | "circle" | "square";
 }

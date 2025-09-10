@@ -39,11 +39,11 @@ const List: FC<T.ListProps> = ({
               <S.Avatar $type={avatarType}>
                 <img
                   src={item.src}
-                  alt={`Avatar for ${item.label}`}
+                  alt={`Avatar for ${item.name}`}
                   loading="lazy"
                 />
               </S.Avatar>
-              <S.Text>{item.label}</S.Text>
+              <S.Text>{item.name}</S.Text>
             </S.Item>
           );
         })}
