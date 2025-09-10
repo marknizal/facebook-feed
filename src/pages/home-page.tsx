@@ -5,6 +5,7 @@ import Socials from "../containers/socials";
 import UserShortcuts from "../containers/user-shortcuts";
 import Footer from "../components/common/footer";
 import Contacts from "../containers/contacts";
+import Birthdays from "../containers/birthdays";
 
 const Homepage: FC = () => {
   return (
@@ -16,7 +17,12 @@ const Homepage: FC = () => {
           <Footer />
         </>
       }
-      rightSide={<Contacts />}
+      rightSide={
+        <>
+          <Birthdays />
+          <Contacts />
+        </>
+      }
     >
       <h1></h1>
     </Layout>

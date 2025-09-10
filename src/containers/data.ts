@@ -59,8 +59,12 @@ export const SHORTCUTS = [
   { id: 7, src: S7, name: "IT Job Search Philippines" },
 ];
 
+export const BIRTHDAYS = [
+  { id: 1, src: L9, name: "John Mark Doe and 7 others have birthdays today." },
+];
+
 export const CONTACTS = [
-  { id: 1, src: A1, name: "John Doe" },
+  { id: 1, src: L1, name: "Meta AI" },
   { id: 2, src: A2, name: "Jane Smith" },
   { id: 3, src: A3, name: "Michael Johnson" },
   { id: 4, src: A4, name: "Emily Davis" },
