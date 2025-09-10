@@ -27,6 +27,15 @@ import A6 from "../assets/A6.jpg";
 import A7 from "../assets/A7.jpg";
 import A8 from "../assets/A8.jpg";
 
+import ST1 from "../assets/ST1.webp";
+import ST2 from "../assets/ST2.webp";
+import ST3 from "../assets/ST3.webp";
+import ST4 from "../assets/ST4.webp";
+import ST5 from "../assets/ST5.webp";
+import ST6 from "../assets/ST6.webp";
+import ST7 from "../assets/ST7.webp";
+import ST8 from "../assets/ST8.webp";
+
 export const SOCIALS = [
   { id: 1, src: L1, name: "Meta AI" },
   { id: 2, src: L2, name: "Friends" },
@@ -94,4 +103,15 @@ export const CONTACTS = [
   { id: 28, src: A4, name: "Chloe Wright" },
   { id: 29, src: A5, name: "Matthew Scott" },
   { id: 30, src: A6, name: "Zoe Green" },
+];
+
+export const STORIES = [
+  { id: 1, profile: A1, story: ST1, name: "John Doe" },
+  { id: 2, profile: A2, story: ST2, name: "Jane Smith" },
+  { id: 3, profile: A3, story: ST3, name: "Alex Johnson" },
+  { id: 4, profile: A4, story: ST4, name: "Emily Davis" },
+  { id: 5, profile: A5, story: ST5, name: "Michael Brown" },
+  { id: 6, profile: A6, story: ST6, name: "Sophia Wilson" },
+  { id: 7, profile: A7, story: ST7, name: "Daniel Martinez" },
+  { id: 8, profile: A8, story: ST8, name: "Olivia Taylor" },
 ];
