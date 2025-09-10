@@ -46,3 +46,19 @@ export const ACTIONS: T.ActionItem[] = [
   { id: "search", icon: FaSearch, label: "Search" },
   { id: "menu", icon: FaBars, label: "Menu" },
 ];
+
+export const FOOTER_LINKS = [
+  { id: "privacy", label: "Privacy", path: "/privacy" },
+  { id: "terms", label: "Terms", path: "/terms" },
+  { id: "advertising", label: "Advertising", path: "/advertising" },
+  { id: "ad-choices", label: "Ad Choices", path: "/ad-choices" },
+  { id: "cookies", label: "Cookies", path: "/cookies" },
+  { id: "more", label: "More", isDropdown: true },
+];
+
+export const MORE_LINKS: T.MoreLink[] = [
+  { key: "about", label: "About", path: "/about" },
+  { key: "careers", label: "Careers", path: "/careers" },
+  { key: "developers", label: "Developers", path: "/developers" },
+  { key: "help", label: "Help", path: "/help" },
+];

@@ -17,3 +17,9 @@ export interface ActionItem {
   icon: IconType;
   label: string;
 }
+
+export interface MoreLink {
+  key: string;
+  label: string;
+  path: string;
+}

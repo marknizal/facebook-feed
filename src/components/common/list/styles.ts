@@ -18,7 +18,7 @@ export const Wrapper = styled.ul<{ $border?: boolean }>`
 
 export const Title = styled.p`
   padding: 0.5rem;
-  color: ${COLOR.grey30};
+  color: ${COLOR.grey20};
   font-weight: 600;
 `;
 

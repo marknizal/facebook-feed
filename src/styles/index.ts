@@ -32,8 +32,8 @@ export const COLOR = {
   ash: "#E3E5E9",
   grey: "#E0E0E0",
   grey10: "#CCCCCC",
-  grey20: "#B3B3B3",
-  grey30: "#999999",
+  grey20: "#999999",
+  grey30: "#555555",
 
   link: "#2A9DF4",
 };
