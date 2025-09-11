@@ -1,8 +1,12 @@
 import styled from "@emotion/styled";
-import { COLOR, FONTSIZE, RADIUS } from "../../../../styles";
+import { COLOR, BREAKPOINT, FONTSIZE, RADIUS } from "../../../../styles";
 
 export const Wrapper = styled.div`
   padding: 0 0.8rem;
+
+  ${BREAKPOINT.mobile} {
+    padding: 0;
+  }
 `;
 
 export const Actions = styled.div`
