@@ -44,7 +44,11 @@ const Stories: React.FC = () => {
 
         {STORIES.map((item) => (
           <S.Item key={item.id} tabIndex={0}>
-            <S.Avatar src={item.profile} alt={item.name} loading="lazy" />
+            <S.Avatar
+              src={item.profile}
+              alt={`${item.name} Profile`}
+              loading="lazy"
+            />
 
             <S.Story
               src={item.story}
