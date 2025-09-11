@@ -36,6 +36,18 @@ import ST6 from "../assets/ST6.webp";
 import ST7 from "../assets/ST7.webp";
 import ST8 from "../assets/ST8.webp";
 
+import P1 from "../assets/P1.jpg";
+import P2 from "../assets/P2.jpg";
+import P3 from "../assets/P3.webp";
+import P4 from "../assets/P4.webp";
+import P5 from "../assets/P5.jpg";
+import P6 from "../assets/P6.jpg";
+import P7 from "../assets/P7.jpg";
+import P8 from "../assets/P8.jpg";
+import P9 from "../assets/P9.jpg";
+import P10 from "../assets/P10.jpg";
+import P11 from "../assets/P11.jpg";
+
 export const SOCIALS = [
   { id: 1, src: L1, name: "Meta AI" },
   { id: 2, src: L2, name: "Friends" },
@@ -114,4 +126,133 @@ export const STORIES = [
   { id: 6, profile: A6, story: ST6, name: "Sophia Wilson" },
   { id: 7, profile: A7, story: ST7, name: "Daniel Martinez" },
   { id: 8, profile: A8, story: ST8, name: "Olivia Taylor" },
+];
+
+export interface User {
+  name: string;
+  avatar: string;
+  type: "account" | "page";
+  isVerified: boolean;
+}
+
+export interface Post {
+  user: User;
+  createdAt: string;
+  privacy: "public" | "friends" | "only" | "custom";
+  caption: string;
+  images?: string[];
+}
+
+export const POSTS: Post[] = [
+  {
+    user: {
+      name: "Alex Rivera",
+      avatar: A1,
+      type: "account",
+      isVerified: false,
+    },
+    createdAt: "2025-09-10T07:30:00Z",
+    privacy: "public",
+    caption: "<p>Hi, may I get the link to buy these or any website?</p>",
+    images: [P1],
+  },
+  {
+    user: {
+      name: "Clara Bennett",
+      avatar: A2,
+      type: "account",
+      isVerified: true,
+    },
+    createdAt: "2025-09-10T09:15:00Z",
+    privacy: "friends",
+    caption:
+      "<p>Find & download the most popular free PSD files on Freepik</p>",
+    images: [P2],
+  },
+  {
+    user: {
+      name: "Rafael Ortega",
+      avatar: A3,
+      type: "account",
+      isVerified: false,
+    },
+    createdAt: "2025-09-10T11:45:00Z",
+    privacy: "only",
+    caption: "<p>Deep focus mode: coding marathon 💻☕</p>",
+    images: [],
+  },
+  {
+    user: {
+      name: "Digital Hive",
+      avatar: A4,
+      type: "page",
+      isVerified: true,
+    },
+    createdAt: "2025-09-11T06:50:00Z",
+    privacy: "custom",
+    caption:
+      "<p>🚀 Our newest app update is live! Improved performance and smoother UI. Check it out!</p>",
+    images: [P3, P4],
+  },
+  {
+    user: {
+      name: "Sofia Martinez",
+      avatar: A5,
+      type: "account",
+      isVerified: false,
+    },
+    createdAt: "2025-09-11T08:20:00Z",
+    privacy: "friends",
+    caption:
+      "<p>He kind of moment that makes silence loud 💥🏸💪</p><p>#LeeZiiJia #BWFWorldChampionships #Paris2025 #Badminton #SportsPhotography #Photogram #Sportsgram</p>",
+    images: [],
+  },
+  {
+    user: {
+      name: "Leo Kim",
+      avatar: A6,
+      type: "account",
+      isVerified: true,
+    },
+    createdAt: "2025-09-11T09:45:00Z",
+    privacy: "public",
+    caption: "<p>Weekend hike in the mountains 🏔️ Nature therapy!</p>",
+    images: [P5],
+  },
+  {
+    user: {
+      name: "Isabella Chen",
+      avatar: A7,
+      type: "account",
+      isVerified: false,
+    },
+    createdAt: "2025-09-11T11:10:00Z",
+    privacy: "public",
+    caption: "<p>Trying out a new café in town ☕🥐 #coffeelover</p>",
+    images: [P6, P7, P8, P9, P10, P10],
+  },
+  {
+    user: {
+      name: "Marcus Patel",
+      avatar: A8,
+      type: "account",
+      isVerified: false,
+    },
+    createdAt: "2025-09-11T12:30:00Z",
+    privacy: "friends",
+    caption: "<p>Celebrating my sister's graduation 🎓 Proud moment! ❤️</p>",
+    images: [],
+  },
+  {
+    user: {
+      name: "Elena Rossi",
+      avatar: A1,
+      type: "account",
+      isVerified: false,
+    },
+    createdAt: "2025-09-11T14:00:00Z",
+    privacy: "public",
+    caption: "<p>Homemade pasta night 🍝 Family time is the best time.</p>",
+    images: [P11],
+  },
 ];

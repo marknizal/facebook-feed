@@ -8,6 +8,7 @@ export const Card = styled.section`
   border-radius: ${RADIUS.md};
   background-color: ${COLOR.white};
   box-shadow: ${SHADOW.thin};
+  overflow: hidden;
 
   ${BREAKPOINT.mobile} {
     border-radius: 0;
