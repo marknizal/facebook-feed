@@ -12,7 +12,7 @@ const Upload = lazy(() => import("../containers/news-feed/upload"));
 const Stories = lazy(() => import("../containers/news-feed/stories"));
 const Post = lazy(() => import("../containers/news-feed/post"));
 
-const Homepage: FC = () => {
+const Home: FC = () => {
   return (
     <Layout
       leftSide={
@@ -38,4 +38,4 @@ const Homepage: FC = () => {
   );
 };
 
-export default Homepage;
+export default Home;
