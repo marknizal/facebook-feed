@@ -1,0 +1,1 @@
+import{j as t}from"./index-Bcw-_1GI.js";import{C as r}from"./data-C0KlCIj5.js";import{L as o}from"./index-BbjslIoE.js";import"./react-gH-7aFTg.js";import"./index-COh2yegP.js";const p=()=>t.jsx(o,{title:"Contacts",avatar:"circle",items:r,length:15});export{p as default};

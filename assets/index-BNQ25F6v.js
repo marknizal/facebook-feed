@@ -1,0 +1,1 @@
+import{j as t}from"./index-Bcw-_1GI.js";import{a as r}from"./data-C0KlCIj5.js";import{L as o}from"./index-BbjslIoE.js";import"./react-gH-7aFTg.js";import"./index-COh2yegP.js";const u=()=>t.jsx(o,{title:"Your shortcuts",items:r,length:5,border:!0,avatar:"square"});export{u as default};
