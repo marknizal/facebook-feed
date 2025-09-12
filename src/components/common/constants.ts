@@ -24,7 +24,7 @@ export const MENU_ITEMS: T.MenuItem[] = [
 ];
 
 export const NAV_ITEMS: T.NavItem[] = [
-  { id: "home", path: "/facebook-feed", label: "Home", Icon: LuHouse },
+  { id: "home", path: "/facebook-feed/", label: "Home", Icon: LuHouse },
   { id: "friends", path: "/friends", label: "Friends", Icon: LuUsers },
   {
     id: "messenger",
