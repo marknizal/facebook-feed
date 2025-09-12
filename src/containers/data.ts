@@ -1,3 +1,5 @@
+import * as T from "./types";
+
 import Profile from "../assets/avatar.jpg";
 
 import L1 from "../assets/meta-ai.png";
@@ -128,22 +130,7 @@ export const STORIES = [
   { id: 8, profile: A8, story: ST8, name: "Olivia Taylor" },
 ];
 
-export interface User {
-  name: string;
-  avatar: string;
-  type: "account" | "page";
-  isVerified: boolean;
-}
-
-export interface Post {
-  user: User;
-  createdAt: string;
-  privacy: "public" | "friends" | "only" | "custom";
-  caption: string;
-  images?: string[];
-}
-
-export const POSTS: Post[] = [
+export const POSTS: T.Post[] = [
   {
     user: {
       name: "Alex Rivera",
