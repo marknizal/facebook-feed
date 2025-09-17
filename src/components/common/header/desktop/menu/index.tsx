@@ -1,7 +1,9 @@
 import type { FC } from "react";
 import { MENU_ITEMS } from "../../../constants";
-
 import Profile from "../../../../../assets/avatar.jpg";
+
+import Account from "../dropdowns/account";
+import { Dropdown } from "antd";
 import * as S from "./styles";
 
 const Menu: FC = () => {
@@ -13,7 +15,14 @@ const Menu: FC = () => {
         </S.Item>
       ))}
 
-      <S.Avatar src={Profile} alt="avatar" title="Account" loading="lazy" />
+      <Dropdown
+        popupRender={() => <Account />}
+        arrow={{ pointAtCenter: true }}
+        trigger={["click"]}
+        placement="bottomRight"
+      >
+        <S.Avatar src={Profile} alt="avatar" title="Account" loading="lazy" />
+      </Dropdown>
     </S.Wrapper>
   );
 };
