@@ -1,0 +1,1 @@
+import{j as r}from"./index-zgMHIMHA.js";import{S as t}from"./data-D2s7_HYM.js";import{L as o}from"./index-BuKWfUaf.js";import"./react-gH-7aFTg.js";const a=()=>r.jsx(o,{items:t,length:8,border:!0});export{a as default};

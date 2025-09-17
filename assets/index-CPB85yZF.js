@@ -1,6 +1,6 @@
-import{r as c,Z as t,a5 as p,$ as s,a8 as u,a3 as b,a0 as x,a6 as w,j as e,a7 as j,a9 as $}from"./index-Bcw-_1GI.js";import{d as S,e as L}from"./index-COh2yegP.js";import{b as R}from"./data-C0KlCIj5.js";import{B as k}from"./button-BN0Cvjah.js";import"./react-gH-7aFTg.js";function z(n=200){const r=c.useRef(null),[d,l]=c.useState(!1),[o,g]=c.useState(!1),a=()=>{if(!r.current)return;const{scrollLeft:i,scrollWidth:v,clientWidth:y}=r.current;l(i>0),g(i+y<v)};return c.useEffect(()=>{a();const i=r.current;return i?.addEventListener("scroll",a),window.addEventListener("resize",a),()=>{i?.removeEventListener("scroll",a),window.removeEventListener("resize",a)}},[]),{scrollRef:r,isLeft:d,isRight:o,scroll:i=>{r.current&&r.current.scrollBy({left:i==="left"?-n:n,behavior:"smooth"})}}}const E=t.div`
+import{r as c,s as t,B as p,f as w,C as s,S as u,R as b,F as g,A as j,j as e,g as $,h as S,P as L,L as R}from"./index-zgMHIMHA.js";import{b as k}from"./data-D2s7_HYM.js";import"./react-gH-7aFTg.js";function z(a=200){const r=c.useRef(null),[d,l]=c.useState(!1),[o,x]=c.useState(!1),n=()=>{if(!r.current)return;const{scrollLeft:i,scrollWidth:v,clientWidth:y}=r.current;l(i>0),x(i+y<v)};return c.useEffect(()=>{n();const i=r.current;return i?.addEventListener("scroll",n),window.addEventListener("resize",n),()=>{i?.removeEventListener("scroll",n),window.removeEventListener("resize",n)}},[]),{scrollRef:r,isLeft:d,isRight:o,scroll:i=>{r.current&&r.current.scrollBy({left:i==="left"?-a:a,behavior:"smooth"})}}}const C=t.div`
   position: relative;
-`,C=t.ul`
+`,E=t.ul`
   list-style: none;
   display: flex;
   align-items: stretch;
@@ -18,7 +18,7 @@ import{r as c,Z as t,a5 as p,$ as s,a8 as u,a3 as b,a0 as x,a6 as w,j as e,a7 as
   }
   -ms-overflow-style: none;
   scrollbar-width: none;
-`,h=t(k)`
+`,h=t(w)`
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -110,7 +110,7 @@ import{r as c,Z as t,a5 as p,$ as s,a8 as u,a3 as b,a0 as x,a6 as w,j as e,a7 as
   }
 
   p {
-    font-size: ${x.xs};
+    font-size: ${g.xs};
     margin-top: auto;
     color: ${s.black};
   }
@@ -119,13 +119,13 @@ import{r as c,Z as t,a5 as p,$ as s,a8 as u,a3 as b,a0 as x,a6 as w,j as e,a7 as
   left: 0.75rem;
   bottom: 0.75rem;
   right: 0.75rem;
-  font-size: ${x.xs};
+  font-size: ${g.xs};
   color: ${s.white};
   z-index: 2;
-`,B=t(w)`
+`,A=t(j)`
   position: absolute;
   left: 0.75rem;
   top: 0.75rem;
   border: 4px solid ${s.primary};
   z-index: 2;
-`,Y=()=>{const{scrollRef:n,isLeft:r,isRight:d,scroll:l}=z();return e.jsxs(E,{children:[r&&e.jsx(h,{className:"left",shape:"circle",onClick:()=>l("left"),icon:e.jsx(S,{}),"aria-label":"Scroll left"}),d&&e.jsx(h,{className:"right",shape:"circle",onClick:()=>l("right"),icon:e.jsx(L,{}),"aria-label":"Scroll right"}),e.jsxs(C,{ref:n,children:[e.jsxs(f,{children:[e.jsx(m,{src:j,alt:"Your story",loading:"lazy"}),e.jsxs(N,{"aria-label":"Create new story",children:[e.jsx($,{className:"icon"}),e.jsx("p",{children:"Create story"})]})]}),R.map(o=>e.jsxs(f,{tabIndex:0,children:[e.jsx(B,{src:o.profile,alt:`${o.name} Profile`,loading:"lazy"}),e.jsx(m,{src:o.story,alt:`${o.name}'s story`,loading:"lazy"}),e.jsx(I,{className:"overlay"}),e.jsx(O,{children:o.name})]},o.id))]})]})};export{Y as default};
+`,T=()=>{const{scrollRef:a,isLeft:r,isRight:d,scroll:l}=z();return e.jsxs(C,{children:[r&&e.jsx(h,{className:"left",shape:"circle",onClick:()=>l("left"),icon:e.jsx($,{}),"aria-label":"Scroll left"}),d&&e.jsx(h,{className:"right",shape:"circle",onClick:()=>l("right"),icon:e.jsx(S,{}),"aria-label":"Scroll right"}),e.jsxs(E,{ref:a,children:[e.jsxs(f,{children:[e.jsx(m,{src:L,alt:"Your story",loading:"lazy"}),e.jsxs(N,{"aria-label":"Create new story",children:[e.jsx(R,{className:"icon"}),e.jsx("p",{children:"Create story"})]})]}),k.map(o=>e.jsxs(f,{tabIndex:0,children:[e.jsx(A,{src:o.profile,alt:`${o.name} Profile`,loading:"lazy"}),e.jsx(m,{src:o.story,alt:`${o.name}'s story`,loading:"lazy"}),e.jsx(I,{className:"overlay"}),e.jsx(O,{children:o.name})]},o.id))]})]})};export{T as default};

@@ -1,0 +1,1 @@
+import{j as t}from"./index-zgMHIMHA.js";import{a as r}from"./data-D2s7_HYM.js";import{L as s}from"./index-BuKWfUaf.js";import"./react-gH-7aFTg.js";const i=()=>t.jsx(s,{title:"Your shortcuts",items:r,length:5,border:!0,avatar:"square"});export{i as default};
