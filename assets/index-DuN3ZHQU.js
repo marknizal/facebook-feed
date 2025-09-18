@@ -1,0 +1,1 @@
+import{j as r}from"./index-D6qGdXDg.js";import{B as t}from"./data-xIsFzoPb.js";import{L as s}from"./index-DLAIhLnR.js";import"./react-gH-7aFTg.js";const m=()=>r.jsx(s,{title:"Birthdays",items:t,border:!0,avatar:"square"});export{m as default};
