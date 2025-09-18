@@ -27,5 +27,5 @@ export const Loader = styled(Spin)`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100dvh;
+  height: calc(100dvh - 3.5rem);
 `;
